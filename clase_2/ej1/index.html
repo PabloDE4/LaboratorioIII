@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form method="POST" action="pagina2.php">
+        <p>Ingrese su nombre</p>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre">
+        <br>
+        <br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Escriba sus comentarios..."></textarea>
+        <br>
+        <br>
+
+        <h3>Seleccione poderes</h3>
+        <input type="checkbox" name="Vuela" id="" checked>Vuela
+        <br>
+        <input type="checkbox" name="Fuerza" id="">Fuerza
+        <br>
+        <input type="checkbox" name="Invisible" id="">Invisible
+        <br>
+        <br>
+
+        <h2>Editorial</h2>
+        <input type="radio" name="editorial" id="dc" value="dc">DC Comics
+        <br>
+        <input type="radio" name="editorial" id="marvel" value="marvel">Marvel
+        <br>
+        <br>
+
+        <h2>Seleccion de heroe</h2>
+        <select name="heroe" id="heroe">
+            <optgroup label="Marvel">
+                <option value="0">Ironman</option>
+                <option value="1">Spiderman</option>
+                <option value="2">Thor</option>
+            </optgroup>
+            <optgroup label="DC">
+                <option value="3">Batman</option>
+                <option value="4">Superman</option>
+                <option value="5">Flash</option>
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+
+        <input type="button" value="Comenzar">
+        <br>
+        <br>
+        <button>
+            <img src="./enviar.jpg" alt="icono enviar" width="60px" height="40px">
+        </button>
+        <br>
+        <br>
+        <input type="file" name="" id="">
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <input type="text"><br>
+            <input type="text"><br>
+            <input type="text"><br>
+            <input type="text"><br>
+            <input type="text"><br>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

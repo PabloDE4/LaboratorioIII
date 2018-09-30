@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        var mascota = {};
+        mascota.nombre = "Pepito";
+        mascota.tipo = "Perro";
+
+        var persona = {
+            nombre: "Juan",
+            apellido: "Perez",
+            edad: 30
+        };
+
+        var alumno = new Object();
+
+        alumno.nombre = "Julio";
+        alumno.edad = 30;
+        */
+
+        function Heroe(nomb, apell, alia, ed) {
+            this.nombre = nomb;
+            this.apellido = apell;
+            this.alias = alia;
+            this.edad = ed;
+            this.Saludar = function () { //FUNCION ANONIMA
+                alert("Hola soy: " + this.alias);
+            }
+        }
+
+        var Superman = new Heroe("Clark", "Kent", "Superman", 34);
+        var Flash = new Heroe("Barry", "Allen", "Flash", 21);
+
+        /*
+        alert(Superman.nombre);
+        alert(Superman["apellido"]);
+        
+        var propiedad = "edad";
+
+        alert(Superman[propiedad]);
+        
+        //RECORRER TODAS LAS PROPIEDADES
+        for (propiedad in Superman) {
+            alert(propiedad);
+        }
+
+        */
+
+        Superman.poder = "fuerza";
+
+        //Borrar propiedad
+        //delete Superman.edad;
+
+        Heroe.prototype.poder = "vuela";
+
+        for (propiedad in Superman) {
+            alert(Superman[propiedad]);
+        }
+
+        for (propiedad in Flash) {
+            alert(Flash[propiedad]);
+        }
+
+        //Flash.Saludar();
+
+        console.log(Superman);
+    </script>
+</body>
+
+</html>

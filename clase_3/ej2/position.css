@@ -1,0 +1,47 @@
+.static{
+    position: static;
+    border: rgb(98, 203, 252) 10px solid;
+    /*
+    Posicion por defecto
+    */
+}
+
+.relative{
+    position: relative;
+    /*
+    La posicion respecto de su posicion natural (static).
+    */
+    width:50%;
+    background-color: aqua;
+    top: 40px;
+    left: 40px;
+    height: 700px;
+}
+
+.fixed{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100px;
+    border: green 5px dashed;
+}
+
+.absolute{
+    position: absolute;
+    /*
+    POSICION EL ELEMENTO CORRELATIVO AL ANCESTRO SUPERIOR POSICIONADO
+    POSICION DIV EN OTRO
+    */
+    top: 30px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border: orange 3px dotted;
+}
+
+.sticky{
+    position: sticky;
+    top: 0px;
+    height: 20px;
+    border: greenyellow 5px solid;
+}

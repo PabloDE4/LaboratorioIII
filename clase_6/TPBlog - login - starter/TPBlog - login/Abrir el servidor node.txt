@@ -1,0 +1,7 @@
+Ctrl + shift + click
+
+Abrir consola de comando
+
+"node server"
+
+para cerrar: Ctrl +C
